@@ -5,7 +5,8 @@
 - Jupyter Notebook
 - NumPy, Pandas
 - Seaborn
-- Sklearn (Linear Regression model)
+- Sklearn (Linear Regression Model)
+- Keras (Neural Network Model)
 - Cryptocompare (for API key)
 
 ### To get an ```API KEY```:
