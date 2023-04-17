@@ -10,7 +10,7 @@
 - Sklearn (Linear Regression Model)
 - Keras (Neural Network Model)
 - Cryptocompare (for API key)
-- Flask
+- Flask (Backend Framework)
 
 ### ```Languages``` ###
 - HTML5/CSS
