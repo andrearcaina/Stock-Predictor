@@ -2,7 +2,6 @@
 - Predicting Ethereum Prices in USD with Machine Learning and API Integration
 - Changing it to a "Stock-Predictor" instead
 - will allow user input through a website
-  - Here's the website as of [right now](https://wondrously-clear-papaya-basement-dev.wayscript.cloud/?)
 
 ### ```Tools``` ###
 - Jupyter Notebook
