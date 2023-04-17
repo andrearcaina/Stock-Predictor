@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:'Roboto Mono', monospace;
+    text-align: center;
+    line-height: 1.5;
+    
+    background-color: rgb(138, 211, 138);
+    color: #232121;
+}
+
+h1 {
+    margin-top: 12%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
