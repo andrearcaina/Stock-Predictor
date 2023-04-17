@@ -4,7 +4,7 @@
 ### ```Tools``` ###
 - Jupyter Notebook
 - NumPy, Pandas
-- Seaborn
+- Seaborn, Matplotlib
 - Sklearn (Linear Regression Model)
 - Keras (Neural Network Model)
 - Cryptocompare (for API key)
