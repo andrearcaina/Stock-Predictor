@@ -7,7 +7,7 @@
 - Jupyter Notebook
 - NumPy, Pandas
 - Seaborn, Matplotlib
-- Sklearn (Linear Regression Model)
+- scikit-learn (Linear Regression Model)
 - Keras (Neural Network Model)
 - Cryptocompare (for API key)
 - Flask (Backend Framework)
