@@ -8,6 +8,8 @@ body {
     
     background-color: rgb(138, 211, 138);
     color: #232121;
+
+    user-select: none;
 }
 
 h1 {
@@ -19,4 +21,78 @@ h1 {
 p {
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+#symbol {
+    background-color: #f1f1f1;
+    width: 300px;
+
+    border: none;
+    border-radius: 20px;
+    
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+    transition: all 0.3s ease;
+}
+
+#symbol:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(34, 185, 202, 0.354);
+    animation: wavy 2s infinite;
+}
+
+@keyframes wavy {
+    0% {
+        transform: rotate(-1deg);
+    }
+    50% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(-1deg);
+    }
+}
+
+#symbol:focus {
+    outline: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(34, 185, 202, 0.354);
+}
+
+#predict-button {
+    background-color: #4CAF50;
+    color: white;
+
+    border: none;
+    padding: 10px 10px;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 20px;
+    
+    cursor: pointer;
+
+    border-radius: 5px;
+    box-shadow: 0 5px 0 #3e8e41;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* The 3D button animation */
+#predict-button:hover {
+    box-shadow: 0 9px 0 #3e8e41;
+    transform: translateY(-4px);
+}
+
+#predict-button:active {
+    box-shadow: 0 4px 0 #3e8e41;
+    transform: translateY(2px);
 }
