@@ -46,29 +46,3 @@ def plot_results(actual, predicted, stock_symbol):
     plt.ylabel('Price (USD)')
     plt.legend()
     plt.show()
-
-def predict(df, symbol):
-    # Scale the data
-    data, scale = scale_data(df)
-
-    # Create the training and testing datasets
-    look_back = 60
-    X, Y = create_dataset(data, look_back=look_back)
-
-    # Split the data into training and testing sets
-    train_size = int(len(X) * 0.8)
-    X_train, X_test = X[:train_size], X[train_size:]
-    y_train, y_test = Y[:train_size], Y[train_size:]
-
-    # Train the model
-    model = train_model(X_train, y_train)
-
-    # Make predictions
-    X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1], 1))
-    y_pred = make_predictions(model, X_test, scale)
-
-    # Plot the results
-    plot_results(y_test, y_pred, symbol)
-
-    # Return the predictions
-    return y_pred.tolist()
