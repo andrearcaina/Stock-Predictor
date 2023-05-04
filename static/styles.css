@@ -96,3 +96,7 @@ p {
     box-shadow: 0 4px 0 #3e8e41;
     transform: translateY(2px);
 }
+
+#loading-container {
+    display: none;
+}

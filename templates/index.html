@@ -42,6 +42,9 @@
             />
             <button id="predict-button" type="submit">Predict</button>
         </form>    
+        <div id="loading-container">
+            <i class="fas fa-spinner fa-spin"></i>
+        </div>          
         <div id="prediction-result"></div>
 
         <script> 
@@ -49,15 +52,15 @@
                 $("#prediction-form").submit(function (event) {
                     event.preventDefault();
                     var symbol = $("#symbol").val();
+                    $("#loading-container").show(); // Show the loading icon
                     $.ajax({
                         url: "/prediction",
                         type: "POST",
                         contentType: "application/json",
                         data: JSON.stringify({ symbol: symbol }),
                         success: function (response) {
-                            $("#prediction-result").html(
-                                "<p>" + response.predictions + "</p>"
-                            );
+                            $("#loading-container").hide(); // Hide the loading icon
+                            $("#prediction-result").html("<p>" + response.predictions + "</p>");
                         },
                     });
                 });
