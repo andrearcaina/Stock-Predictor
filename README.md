@@ -1,7 +1,6 @@
-# ETH-Predictor
-- Predicting Ethereum Prices in USD with Machine Learning and API Integration
-- Changing it to a "Stock-Predictor" instead
-- will allow user input through a website
+# Stock-Predictor
+- Predicting Stock Prices in USD with Machine Learning and API Integration
+- allows user input of a currency symbol like ETH or BTC through a website
 
 ### ```Tools``` ###
 - Jupyter Notebook
@@ -13,8 +12,10 @@
 - Flask (Backend Framework)
 
 ### ```Languages``` ###
-- HTML5/CSS
 - Python
+- JavaScript
+- HTML
+- CSS
 
 ### To get an ```API KEY```:
   - make an account on cryptocompare.com
